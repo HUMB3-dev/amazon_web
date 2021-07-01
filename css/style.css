@@ -196,9 +196,9 @@ main {
 main .target {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 4px auto 4px auto 4px auto;
+  -ms-grid-columns: auto 2px auto 2px auto 2px auto;
   grid-template-columns: auto auto auto auto;
-  -ms-grid-rows: auto 15px auto 15px auto;
+  -ms-grid-rows: auto 20px auto 20px auto;
   grid-template-rows: auto auto auto;
   width: 100%;
   height: 600px;
@@ -206,17 +206,42 @@ main .target {
   background: none;
   margin-top: 250px;
       grid-template-areas: "1 2 3 4" "5 6 7 8" "9 10 11 12";
-  -webkit-column-gap: 4px;
-     -moz-column-gap: 4px;
-          column-gap: 4px;
-  row-gap: 15px;
+  -webkit-column-gap: 2px;
+     -moz-column-gap: 2px;
+          column-gap: 2px;
+  row-gap: 20px;
 }
 main .target div {
   background-color: white;
-  width: 332px;
+  width: 91%;
   height: 420px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: auto;
+}
+main .target div img {
+  width: 90%;
+  height: 72%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  text-align: center;
+}
+main .target div input {
+  width: 90%;
+  height: 29px;
+  background-color: #f2ca68;
+  border: 1px solid #9c7e31;
+  border-radius: 2px;
 }
 
 body {
-  background-color: #d5f3f3;
+  background-color: #eaeded;
 }
