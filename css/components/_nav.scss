@@ -1,0 +1,167 @@
+$bgcolor:#eaeded;
+
+$color2:#232f3e;
+$colorb: black;
+$colorg:#f3f3f3;
+ @mixin hipervinculo {
+    width: auto;
+    height: 28px;
+    margin: 12px;
+   
+ }
+nav{
+    position: fixed;
+    width: 100%;
+    height: 99px;
+     background-color: rgb(240, 233, 233);
+    display: flex;
+    flex-direction: column;
+    margin-top: -99px;
+    z-index: 8000;
+       .nav_superior{
+           background-color: $colorb;
+           width: 100%;
+           height: 60px;
+           display: flex;
+               .navs1{
+               width: 113px;
+               height: 60px;
+               margin-left: 20px;
+                  img{
+                      width: 100%;
+                      height: 60px;
+                  }
+               }
+               .navs2{
+                   color: rgba(233, 223, 223, 0.753);
+                   width: 81px;
+                   height: 50px;
+                   margin: 4px 4px 20px 20px;
+                   display: flex;
+                   flex-direction: column;
+                   &:hover{
+                    border: 1px solid whitesmoke;
+                    border-radius: 3px;
+                   }
+                    .navs2_c1{
+                        font-size: 13px;
+                        color: rgba(163, 163, 163, 0.89);
+                        width: 100%;
+                        height: 30%;
+                        margin-top: -8px;
+                        margin-left: 25px;
+                        padding: px;
+                    }
+                    .navs2_c2{
+                        font-size: 18px;
+                        color: rgb(255, 255, 255);
+                        width: 100%;
+                        height: 40%;
+                        margin-left: 25px;
+                        margin-top: -5px;
+                        
+                    }
+                    }
+                    .navs3{
+                        
+                        width: 1277px;
+                        height: 60px;
+                        
+                       
+                       
+                          .navs3_c1{
+                              margin-top:10px;
+                              margin-bottom: 10px;
+                              width: 97%;
+                              height: 40px;
+                              background-color: white;
+                              border-radius: 6px;
+                               display: flex;
+                               justify-content: space-between;
+                               
+                                 .navs3_c1-select{
+                                     background-color: $colorg;
+                                     width:70px ;
+                                     height: 100%;
+                                     border-top-left-radius: 6px;
+                                     border-bottom-left-radius: 6px;
+                                     border-right: 0.5px solid rgb(197, 195, 195);
+                                     align-self: start;
+                                     
+                                       h6{
+                                           margin-top: 12px;
+                                           width: 100%;
+                                           font-size: 13px;
+                                           text-align: center;
+                                           height: 40px;
+                                           color: rgb(85, 85, 85);
+                                           font-family:  sans-serif;
+                                       }
+                                     
+                                 }
+                                 .navs3_c1-search{
+                                    background-color:#febd69;
+                                    width:45px ;
+                                    height: 100%;
+                                    border-top-right-radius: 6px;
+                                    border-bottom-right-radius: 6px;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                        div{
+                                            width: 22px;
+                                            height: 22px;
+                                        }
+                                    i{
+                                        color: rgb(85, 85, 85);
+                                        font-size: 22px;
+                                        text-align: center;
+                                        margin: auto;
+                                    }
+                                
+                                }
+                    }
+                    
+                }
+
+       }
+           .nav_inferior{
+               background-color: $color2;
+               width: 100%;
+               height: 99px-60px;
+               display: flex;
+               align-items: center;
+                  div{
+                      margin: 2px;
+                       a{
+                           text-decoration: none;
+                           color: white;
+                       }
+                  }
+               .navi1{
+                  @include hipervinculo();
+                   
+                   
+               }
+               .navi2{
+                @include hipervinculo();
+                
+            }
+            .navi3{
+                @include hipervinculo();
+                
+            }
+            .navi4{
+                @include hipervinculo();
+                
+            }
+            .navi5{
+                @include hipervinculo();
+                
+            }
+            .navi6{
+                @include hipervinculo();
+                
+            }
+           }
+        }
