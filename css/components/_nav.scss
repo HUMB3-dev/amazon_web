@@ -78,6 +78,10 @@ nav{
                               border-radius: 6px;
                                display: flex;
                                justify-content: space-between;
+                                    
+                               :focus {
+                                                border: 3px solid #febd69 ;
+                                     }
                                
                                  .navs3_c1-select{
                                      background-color: $colorg;
@@ -97,8 +101,14 @@ nav{
                                            color: rgb(85, 85, 85);
                                            font-family:  sans-serif;
                                        }
+                                       
                                      
                                  }
+                                 input{
+                                    outline: none;
+                                    width: 1277px-130px;
+                                    border: 0;
+                                   }
                                  .navs3_c1-search{
                                     background-color:#febd69;
                                     width:45px ;
