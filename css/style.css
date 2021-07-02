@@ -181,11 +181,11 @@ nav .nav_inferior div a {
 nav .nav_inferior .vincinferior {
   width: auto;
   height: 18px;
-  margin: 12px;
+  margin: 10px;
 }
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav .nav_inferior .vincinferior {
-    font-size: 13px;
+    font-size: 10px;
     font-family: "Fjalla One", sans-serif;
     text-align: center;
     -ms-flex-item-align: center;
