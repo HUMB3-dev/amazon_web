@@ -1,7 +1,7 @@
 nav {
   position: fixed;
   width: 100vw;
-  height: 99px;
+  height: auto;
   background-color: #f0e9e9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,6 +13,11 @@ nav {
   margin-top: -99px;
   z-index: 8000;
 }
+@media screen and (max-width: 780px) and (min-width: 320px) {
+  nav {
+    margin-top: -139px;
+  }
+}
 nav .nav_superior {
   background-color: black;
   width: 100%;
@@ -20,6 +25,11 @@ nav .nav_superior {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+@media screen and (max-width: 780px) and (min-width: 320px) {
+  nav .nav_superior {
+    height: 100px;
+  }
 }
 nav .nav_superior .navs1 {
   width: 113px;
@@ -67,6 +77,16 @@ nav .nav_superior .navs2 .navs2_c2 {
 nav .nav_superior .navs3 {
   width: 1277px;
   height: 60px;
+}
+@media screen and (max-width: 780px) and (min-width: 320px) {
+  nav .nav_superior .navs3 {
+    width: 10%;
+    height: 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-left: -40vw;
+  }
 }
 nav .nav_superior .navs3 .navs3_c1 {
   margin-top: 10px;
@@ -198,6 +218,7 @@ main {
     width: 100%;
     background-size: contain;
     background-repeat: no-repeat;
+    margin-top: 139px;
   }
 }
 main .target {
