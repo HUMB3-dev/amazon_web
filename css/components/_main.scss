@@ -11,12 +11,15 @@
 
 }
 main{
-    width: 1500px;
+    width: 75vw;
     height: 600px;
     background-image: url(https://m.media-amazon.com/images/I/610UHMnjeYL._SX1500_.jpg);
     position: relative;
     margin: auto;
     margin-top: 99px;
+        @media screen and(max-width:320px){
+              width: 100%;           
+    } 
               .target{
                  display: grid;
                  grid-template-columns: auto auto auto auto;
@@ -32,7 +35,15 @@ main{
                       "9 10 11 12";
                       column-gap: 2px;
                       row-gap: 20px;
+                  @media screen and(max-width:320px) {
+                    grid-template-areas:none;
+                    grid-template-columns: auto ;
+                    grid-template-rows: 12(auto);
+                     
+                    
+
                       
+                  }
                      
                       div{
                           @include targets();

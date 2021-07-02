@@ -1,6 +1,6 @@
 nav {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   height: 99px;
   background-color: #f0e9e9;
   display: -webkit-box;
@@ -186,12 +186,17 @@ nav .nav_inferior .navi6 {
 }
 
 main {
-  width: 1500px;
+  width: 75vw;
   height: 600px;
   background-image: url(https://m.media-amazon.com/images/I/610UHMnjeYL._SX1500_.jpg);
   position: relative;
   margin: auto;
   margin-top: 99px;
+}
+@media screen and (max-width: 320px) {
+  main {
+    width: 100%;
+  }
 }
 main .target {
   display: -ms-grid;
@@ -210,6 +215,15 @@ main .target {
      -moz-column-gap: 2px;
           column-gap: 2px;
   row-gap: 20px;
+}
+@media screen and (max-width: 320px) {
+  main .target {
+        grid-template-areas: none;
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
+    -ms-grid-rows: 12 auto;
+    grid-template-rows: 12 auto;
+  }
 }
 main .target div {
   background-color: white;
