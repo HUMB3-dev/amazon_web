@@ -17,7 +17,7 @@ main{
     position: relative;
     margin: auto;
     margin-top: 99px;
-        @media screen and(max-width:320px){
+        @media screen and(min-width:320px){
               width: 100%;           
     } 
               .target{
@@ -35,7 +35,7 @@ main{
                       "9 10 11 12";
                       column-gap: 2px;
                       row-gap: 20px;
-                  @media screen and(max-width:320px) {
+                  @media screen and(min-width:320px) {
                     grid-template-areas:none;
                     grid-template-columns: auto ;
                     grid-template-rows: 12(auto);
