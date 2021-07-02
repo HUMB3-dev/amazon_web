@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
 nav {
   position: fixed;
   width: 100vw;
@@ -80,12 +81,14 @@ nav .nav_superior .navs3 {
 }
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav .nav_superior .navs3 {
-    width: 10%;
-    height: 30px;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin-left: -40vw;
+    width: 80%;
+    height: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    top: 45px;
+    left: 45px;
   }
 }
 nav .nav_superior .navs3 .navs3_c1 {
@@ -101,6 +104,11 @@ nav .nav_superior .navs3 .navs3_c1 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (max-width: 780px) and (min-width: 320px) {
+  nav .nav_superior .navs3 .navs3_c1 {
+    height: 30px;
+  }
 }
 nav .nav_superior .navs3 .navs3_c1 :focus {
   border: 3px solid #febd69;
@@ -159,50 +167,31 @@ nav .nav_superior .navs3 .navs3_c1 .navs3_c1-search i {
 nav .nav_inferior {
   background-color: #232f3e;
   width: 100%;
-  height: 39px;
+  height: 22px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-nav .nav_inferior div {
-  margin: 2px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 nav .nav_inferior div a {
   text-decoration: none;
   color: white;
 }
-nav .nav_inferior .navi1 {
+nav .nav_inferior .vincinferior {
   width: auto;
-  height: 28px;
+  height: 18px;
   margin: 12px;
 }
-nav .nav_inferior .navi2 {
-  width: auto;
-  height: 28px;
-  margin: 12px;
-}
-nav .nav_inferior .navi3 {
-  width: auto;
-  height: 28px;
-  margin: 12px;
-}
-nav .nav_inferior .navi4 {
-  width: auto;
-  height: 28px;
-  margin: 12px;
-}
-nav .nav_inferior .navi5 {
-  width: auto;
-  height: 28px;
-  margin: 12px;
-}
-nav .nav_inferior .navi6 {
-  width: auto;
-  height: 28px;
-  margin: 12px;
+@media screen and (max-width: 780px) and (min-width: 320px) {
+  nav .nav_inferior .vincinferior {
+    font-size: 13px;
+    font-family: "Fjalla One", sans-serif;
+    text-align: center;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 main {
@@ -251,7 +240,7 @@ main .target {
 }
 main .target div {
   background-color: white;
-  width: 91%;
+  width: 80%;
   height: 420px;
   display: -webkit-box;
   display: -ms-flexbox;
