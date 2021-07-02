@@ -14,11 +14,13 @@ nav {
   margin-top: -99px;
   z-index: 8000;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav {
     margin-top: -120px;
   }
 }
+
 nav .nav_superior {
   background-color: #000000;
   width: 100%;
@@ -27,20 +29,24 @@ nav .nav_superior {
   display: -ms-flexbox;
   display: flex;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav .nav_superior {
     height: 100px;
   }
 }
+
 nav .nav_superior .navs1 {
   width: 113px;
   height: 60px;
   margin-left: 20px;
 }
+
 nav .nav_superior .navs1 img {
   width: 100%;
   height: 60px;
 }
+
 nav .nav_superior .navs2 {
   color: rgba(233, 223, 223, 0.753);
   width: 81px;
@@ -54,10 +60,12 @@ nav .nav_superior .navs2 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
+
 nav .nav_superior .navs2:hover {
   border: 1px solid whitesmoke;
   border-radius: 3px;
 }
+
 nav .nav_superior .navs2 .navs2_c1 {
   font-size: 13px;
   color: rgba(163, 163, 163, 0.89);
@@ -67,6 +75,7 @@ nav .nav_superior .navs2 .navs2_c1 {
   margin-left: 25px;
   padding: px;
 }
+
 nav .nav_superior .navs2 .navs2_c2 {
   font-size: 18px;
   color: white;
@@ -75,10 +84,12 @@ nav .nav_superior .navs2 .navs2_c2 {
   margin-left: 25px;
   margin-top: -5px;
 }
+
 nav .nav_superior .navs3 {
   width: 1277px;
   height: 60px;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav .nav_superior .navs3 {
     width: 80%;
@@ -91,6 +102,7 @@ nav .nav_superior .navs3 {
     left: 45px;
   }
 }
+
 nav .nav_superior .navs3 .navs3_c1 {
   margin-top: 10px;
   margin-bottom: 10px;
@@ -105,14 +117,17 @@ nav .nav_superior .navs3 .navs3_c1 {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav .nav_superior .navs3 .navs3_c1 {
     height: 30px;
   }
 }
+
 nav .nav_superior .navs3 .navs3_c1 :focus {
   border: 3px solid #febd69;
 }
+
 nav .nav_superior .navs3 .navs3_c1 .navs3_c1-select {
   background-color: #f3f3f3;
   width: 70px;
@@ -124,6 +139,7 @@ nav .nav_superior .navs3 .navs3_c1 .navs3_c1-select {
       -ms-grid-row-align: start;
       align-self: start;
 }
+
 nav .nav_superior .navs3 .navs3_c1 .navs3_c1-select h6 {
   margin-top: 12px;
   width: 100%;
@@ -133,11 +149,13 @@ nav .nav_superior .navs3 .navs3_c1 .navs3_c1-select h6 {
   color: #555555;
   font-family: sans-serif;
 }
+
 nav .nav_superior .navs3 .navs3_c1 input {
   outline: none;
   width: 1147px;
   border: 0;
 }
+
 nav .nav_superior .navs3 .navs3_c1 .navs3_c1-search {
   background-color: #febd69;
   width: 45px;
@@ -154,16 +172,19 @@ nav .nav_superior .navs3 .navs3_c1 .navs3_c1-search {
       -ms-flex-align: center;
           align-items: center;
 }
+
 nav .nav_superior .navs3 .navs3_c1 .navs3_c1-search div {
   width: 22px;
   height: 22px;
 }
+
 nav .nav_superior .navs3 .navs3_c1 .navs3_c1-search i {
   color: #555555;
   font-size: 22px;
   text-align: center;
   margin: auto;
 }
+
 nav .nav_inferior {
   background-color: #232f3e;
   width: 100%;
@@ -174,24 +195,27 @@ nav .nav_inferior {
   -ms-flex-line-pack: center;
       align-content: center;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav .nav_inferior {
     height: 22px;
   }
 }
+
 nav .nav_inferior div a {
   text-decoration: none;
   color: white;
 }
+
 nav .nav_inferior .vincinferior {
   width: auto;
   height: 18px;
-  margin: 10px;
+  margin: 9px;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   nav .nav_inferior .vincinferior {
     font-size: 10px;
-    font-family: "Fjalla One", sans-serif;
     text-align: center;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
@@ -207,6 +231,7 @@ main {
   margin: auto;
   margin-top: 99px;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   main {
     width: 100%;
@@ -215,34 +240,36 @@ main {
     margin-top: 120px;
   }
 }
+
 main .target {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 2px auto 2px auto 2px auto;
-  grid-template-columns: auto auto auto auto;
-  -ms-grid-rows: auto 20px auto 20px auto;
-  grid-template-rows: auto auto auto;
+  -ms-grid-columns: auto auto auto auto;
+      grid-template-columns: auto auto auto auto;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
   width: 100%;
   height: 600px;
   position: absolute;
   background: none;
   margin-top: 240px;
-      grid-template-areas: "1 2 3 4" "5 6 7 8" "9 10 11 12";
+      grid-template-areas: "1 2 3 4" "5 6 7 8" "9 10 11 12";
   -webkit-column-gap: 2px;
-     -moz-column-gap: 2px;
           column-gap: 2px;
   row-gap: 20px;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   main .target {
         grid-template-areas: none;
     -ms-grid-columns: auto;
-    grid-template-columns: auto;
+        grid-template-columns: auto;
     -ms-grid-rows: 12 auto;
-    grid-template-rows: 12 auto;
+        grid-template-rows: 12 auto;
     margin-top: 120px;
   }
 }
+
 main .target div {
   background-color: white;
   width: 90%;
@@ -259,11 +286,15 @@ main .target div {
           align-items: center;
   margin: auto;
 }
+
 @media screen and (max-width: 780px) and (min-width: 320px) {
   main .target div {
-    width: 80%;
+    width: 60%;
+    font-size: 12px;
+    height: 300px;
   }
 }
+
 main .target div img {
   width: 90%;
   height: 72%;
@@ -271,6 +302,7 @@ main .target div img {
      object-fit: cover;
   text-align: center;
 }
+
 main .target div input {
   width: 90%;
   height: 29px;
@@ -282,3 +314,4 @@ main .target div input {
 body {
   background-color: #eaeded;
 }
+/*# sourceMappingURL=style.css.map */
